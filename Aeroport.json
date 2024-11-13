@@ -60,13 +60,15 @@
 
       },
       {
-        "Numero": "KL202",
-        "AvionRef": "Airbus A330",
-        "Depart": "Piste 1",
-        "Arrivee": "Piste 1",
-        "Heure": "17:30",
-        "Destination": "Amsterdam",
-        "Date": "2024-11-15T08:30:00Z"  
+       "Numero": "AF1234",
+        "AvionRef": "Airbus A320",
+        "Depart": "Piste Nord",
+        "Arrivee": "Piste Sud",
+        "Heure": "08:30",
+        "Destination": "Paris",
+        "Date": "2024-11-15T08:30:00Z",
+        "Piste": "Piste Nord",
+        "PiloteId": 123       
 
       }
     ]
