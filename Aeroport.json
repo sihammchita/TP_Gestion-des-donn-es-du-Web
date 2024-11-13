@@ -56,7 +56,10 @@
         "Arrivee": "Piste 2",
         "Heure": "12:00",
         "Destination": "Londres",
-        "Date": "2024-11-15T08:30:00Z"  
+        "Date": "2024-11-15T08:30:00Z" ,
+        "Piste": "Piste Nord",
+        "PiloteId": 124      
+
 
       },
       {
