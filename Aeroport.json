@@ -1,0 +1,75 @@
+﻿{
+  "Aeroport": {
+    "Employes": [
+      {
+        "NomEmploye": "Benoit",
+        "Prenom": "Marion",
+        "Age": 27,
+        "Poste": "Responsable des passagers"
+      },
+      {
+        "NomEmploye": "Roux",
+        "Prenom": "Sylvain",
+        "Age": 41,
+        "Poste": "Chef de la sécurité"
+      }
+    ],
+    "Pistes": [
+      {
+        "NomPiste": "Piste 1",
+        "Longueur": 3800,
+        "Etat": "Disponible"
+      },
+      {
+        "NomPiste": "Piste 2",
+        "Longueur": 4200,
+        "Etat": "Fermée pour maintenance"
+      }
+    ],
+    "Compagnies": [
+      {
+        "NomCompagnie": "British Airways",
+        "Pays": "Royaume-Uni"
+      },
+      {
+        "NomCompagnie": "KLM",
+        "Pays": "Pays-Bas"
+      }
+    ],
+    "Avions": [
+      {
+        "Modele": "Boeing 737",
+        "CompagnieRef": "British Airways",
+        "Capacite": 160
+      },
+      {
+        "Modele": "Airbus A330",
+        "CompagnieRef": "KLM",
+        "Capacite": 300
+      }
+    ],
+    "Vols": [
+      {
+        "Numero": "BA101",
+        "AvionRef": "Boeing 737",
+        "Depart": "Piste 1",
+        "Arrivee": "Piste 2",
+        "Heure": "12:00",
+        "Destination": "Londres",
+        "Date": "2024-11-15T08:30:00Z"  
+
+      },
+      {
+        "Numero": "KL202",
+        "AvionRef": "Airbus A330",
+        "Depart": "Piste 1",
+        "Arrivee": "Piste 1",
+        "Heure": "17:30",
+        "Destination": "Amsterdam",
+        "Date": "2024-11-15T08:30:00Z"  
+
+      }
+    ]
+    
+  }
+}

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT Aeroport (Employes, Pistes, Compagnies, Avions, Vols)>
+
+<!ELEMENT Employes (Employe+)>
+<!ELEMENT Employe (NomEmploye, Prenom, Age, Poste)>
+<!ELEMENT NomEmploye (#PCDATA)>
+<!ELEMENT Prenom (#PCDATA)>
+<!ELEMENT Age (#PCDATA)>
+<!ELEMENT Poste (#PCDATA)>
+
+<!ELEMENT Pistes (Piste+)>
+<!ELEMENT Piste (NomPiste, Longueur, Etat)>
+<!ELEMENT NomPiste (#PCDATA)>
+<!ELEMENT Longueur (#PCDATA)>
+<!ELEMENT Etat (#PCDATA)>
+
+<!ELEMENT Compagnies (Compagnie+)>
+<!ELEMENT Compagnie (NomCompagnie, Pays)>
+<!ELEMENT NomCompagnie (#PCDATA)>
+<!ELEMENT Pays (#PCDATA)>
+
+<!ELEMENT Avions (Avion+)>
+<!ELEMENT Avion (Modele, CompagnieRef, Capacite)>
+<!ELEMENT Modele (#PCDATA)>
+<!ELEMENT CompagnieRef (#PCDATA)>
+<!ELEMENT Capacite (#PCDATA)>
+
+<!ELEMENT Vols (Vol+)>
+<!ELEMENT Vol (Numero, AvionRef, Depart, Arrivee, Heure, Destination, Date, Piste_vol, PiloteId)>
+<!ELEMENT Numero (#PCDATA)>
+<!ELEMENT AvionRef (#PCDATA)>
+<!ELEMENT Depart (#PCDATA)>
+<!ELEMENT Arrivee (#PCDATA)>
+<!ELEMENT Heure (#PCDATA)>
+<!ELEMENT Destination (#PCDATA)>
+<!ELEMENT Date (#PCDATA)>
+<!ELEMENT Piste_vol (#PCDATA)> 
+<!ELEMENT PiloteId (#PCDATA)> 
+

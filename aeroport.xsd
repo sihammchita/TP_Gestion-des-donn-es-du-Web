@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://www.w3.org/2001/XMLSchema"
+           xmlns="http://www.w3.org/2001/XMLSchema" 
+           elementFormDefault="qualified">
+    <xs:element name="Aeroport">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Employes">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Employe" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="NomEmploye" type="xs:string"/>
+                                        <xs:element name="Prenom" type="xs:string"/>
+                                        <xs:element name="Age" type="xs:integer"/>
+                                        <xs:element name="Poste" type="xs:string"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="Pistes">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Piste" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="NomPiste" type="xs:string"/>
+                                        <xs:element name="Longueur" type="xs:integer"/>
+                                        <xs:element name="Etat" type="xs:string"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="Compagnies">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Compagnie" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="NomCompagnie" type="xs:string"/>
+                                        <xs:element name="Pays" type="xs:string"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="Avions">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Avion" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Modele" type="xs:string"/>
+                                        <xs:element name="CompagnieRef" type="xs:string"/>
+                                        <xs:element name="Capacite" type="xs:integer"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="Vols">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Vol" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Numero" type="xs:string"/>
+                                        <xs:element name="AvionRef" type="xs:string"/>
+                                        <xs:element name="Depart" type="xs:string"/>
+                                        <xs:element name="Arrivee" type="xs:string"/>
+                                        <xs:element name="Heure" type="xs:string"/>
+                                        <xs:element name="Destination" type="xs:string"/>
+                                        <xs:element name="Date" type="xs:dateTime"/>
+                                        <xs:element name="Piste_vol" type="xs:string"/> <!-- Ajout de Piste -->
+                                        <xs:element name="PiloteId" type="xs:integer"/> <!-- Ajout de PiloteId -->
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

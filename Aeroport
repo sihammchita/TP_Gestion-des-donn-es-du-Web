@@ -1,0 +1,47 @@
+﻿{
+  "Aeroport": {
+    "Employes": [
+      {
+        "NomEmploye": "Dupont",
+        "Prenom": "Jean",
+        "Age": 34,
+        "Poste": "Technicien"
+      }
+      // Autres employés
+    ],
+    "Pistes": [
+      {
+        "NomPiste": "Nord",
+        "Longueur": 3500,
+        "Etat": "Disponible"
+      }
+      // Autres pistes
+    ],
+    "Compagnies": [
+      {
+        "NomCompagnie": "Air France",
+        "Pays": "France"
+      }
+      // Autres compagnies
+    ],
+    "Avions": [
+      {
+        "Modele": "Airbus A320",
+        "CompagnieRef": "Air France",
+        "Capacite": 180
+      }
+      // Autres avions
+    ],
+    "Vols": [
+      {
+        "Numero": "AF1234",
+        "AvionRef": "Airbus A320",
+        "Depart": "Piste Nord",
+        "Arrivee": "Piste Sud",
+        "Heure": "08:30",
+        "Destination": "Paris"
+      }
+      // Autres vols
+    ]
+  }
+}
