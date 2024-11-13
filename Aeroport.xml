@@ -9,7 +9,6 @@
             <Poste>Technicien</Poste>
             
         </Employe>
-        <!-- Autres employés -->
     </Employes>    
     <Pistes>
         <Piste>
@@ -17,7 +16,6 @@
             <Longueur>3500</Longueur>
             <Etat>Disponible</Etat>
         </Piste>
-        <!-- Autres pistes -->
     </Pistes>
     
     <Compagnies>
@@ -25,13 +23,12 @@
             <NomCompagnie>Air France</NomCompagnie>
             <Pays>France</Pays>
         </Compagnie>
-        <!-- Autres compagnies aériennes -->
     </Compagnies>
     
     <Avions>
         <Avion>
             <Modele>Airbus A320</Modele>
-            <CompagnieRef>Air France</CompagnieRef> <!-- Utilisation de CompagnieRef -->
+            <CompagnieRef>Air France</CompagnieRef> 
             <Capacite>180</Capacite>
         </Avion>
     </Avions>
@@ -50,6 +47,5 @@
             
 
         </Vol>
-        <!-- Autres vols -->
     </Vols>
 </Aeroport>
